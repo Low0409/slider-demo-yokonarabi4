@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <script src="./slick/slick.js"></script>
+    <link rel="stylesheet" href="./slick/fonts/">
+</head>
+
+<body>
+
+
+    <div class="multiple">
+        <div><img src="./img/1.jpg"></div>
+        <div><img src="./img/2.jpg"></div>
+        <div><img src="./img/3.jpg"></div>
+        <div><img src="./img/4.jpg"></div>
+        <div><img src="./img/5.jpg"></div>
+        <div><img src="./img/6.jpg"></div>
+        <div><img src="./img/7.jpg"></div>
+        <div><img src="./img/8.jpg"></div>
+
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('スライダーのクラス名').slick({
+            オプション: 値
+        });
+    });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+
+
+    $(document).ready(function () {
+        $('.multiple').slick({
+            autoplay: true, //自動再生
+            infinite: true, //スライドのループ有効化
+            dots: true, //ドットのナビゲーションを表示
+            slidesToShow: 4, //表示するスライドの数
+            slidesToScroll: 4, //スクロールで切り替わるスライドの数
+            responsive: [{
+                breakpoint: 768, //ブレークポイントが768px
+                settings: {
+                    slidesToShow: 3, //表示するスライドの数
+                    slidesToScroll: 3, //スクロールで切り替わるスライドの数
+                }
+            }, {
+                breakpoint: 480, //ブレークポイントが480px
+                settings: {
+                    slidesToShow: 2, //表示するスライドの数
+                    slidesToScroll: 2, //スクロールで切り替わるスライドの数
+                }
+            }]
+        });
+    });
+    $(document).ready(function () {
+        $('.multiple').slick({
+            autoplay: true, //自動再生
+            infinite: true, //スライドのループ有効化
+            dots: true, //ドットのナビゲーションを表示
+            slidesToShow: 4, //表示するスライドの数
+            slidesToScroll: 4, //スクロールで切り替わるスライドの数
+            responsive: [{
+                breakpoint: 768, //ブレークポイントが768px
+                settings: {
+                    slidesToShow: 3, //表示するスライドの数
+                    slidesToScroll: 3, //スクロールで切り替わるスライドの数
+                }
+            }, {
+                breakpoint: 480, //ブレークポイントが480px
+                settings: {
+                    slidesToShow: 2, //表示するスライドの数
+                    slidesToScroll: 2, //スクロールで切り替わるスライドの数
+                }
+            }]
+        });
+    });
+</script>
+<style>
+    .multiple {
+        padding: 0;
+    }
+
+    .multiple img {
+        width: 100%;
+    }
+
+    .multiple div {
+        margin: 0 5px;
+    }
+
+    .multiple .slick-next {
+        right: 17px;
+        z-index: 100;
+    }
+
+    .multiple .slick-prev {
+        left: 23px;
+        z-index: 100;
+    }
+
+    .multiple {
+        padding: 0;
+    }
+
+    .multiple img {
+        width: 100%;
+    }
+
+    .multiple div {
+        margin: 0 5px;
+    }
+
+    .multiple .slick-next {
+        right: 17px;
+        z-index: 100;
+    }
+
+    .multiple .slick-prev {
+        left: 23px;
+        z-index: 100;
+    }
+</style>
+
+</html>
